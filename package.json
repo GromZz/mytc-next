@@ -1,0 +1,54 @@
+{
+  "name": "weevely",
+  "version": "1.0.0",
+  "description": "Simple event calendar built with Next.js and React.js that can be used for creating, managing, and searching for events.",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "next start",
+    "build": "next build",
+    "dev": "next dev",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PAXANDDOS/weevely-next.git"
+  },
+  "keywords": [
+    "weevely",
+    "calendar",
+    "events",
+    "event-calendar",
+    "chronos",
+    "time-management",
+    "time",
+    "weekend",
+    "holiday",
+    "nextjs",
+    "reactjs"
+  ],
+  "author": "Paul Litovka",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/PAXANDDOS/weevely-next/issues"
+  },
+  "homepage": "https://github.com/PAXANDDOS/weevely-next#readme",
+  "dependencies": {
+    "axios": "^0.23.0",
+    "dayjs": "^1.10.7",
+    "next": "^11.1.2",
+    "nookies": "^2.5.2",
+    "nprogress": "^0.2.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-hot-toast": "^2.1.1",
+    "react-modal": "^3.14.3",
+    "sass": "^1.43.3",
+    "superjson": "^1.8.0"
+  },
+  "devDependencies": {
+    "babel-plugin-superjson-next": "^0.4.2",
+    "eslint": "^7.32.0",
+    "eslint-config-next": "^11.1.2"
+  }
+}

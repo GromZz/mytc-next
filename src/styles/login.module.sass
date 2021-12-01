@@ -1,0 +1,115 @@
+@use 'index.scss' as *
+
+.login
+    @include flex-row
+    width: 100%
+    height: calc(100% - 100px)
+    justify-content: center
+    align-items: center
+    @include phone
+        flex-direction: column
+    .fields
+        @include flex-column
+        align-items: flex-start
+        width: 500px
+        height: 600px
+        margin-top: 60px
+        @include phone
+            width: 85%
+            height: fit-content
+        h1
+            font-size: 36px
+            @include phone
+                font-size: 24px
+        span
+            margin: 20px 0 0 0
+            font-size: 20px
+            color: #0f1031
+            @include phone
+                font-size: 14px
+            a
+                color: $brand-purple
+                &:hover
+                    text-decoration: underline
+            &:nth-child(2)
+                margin-bottom: 50px
+                @include phone
+                    margin-bottom: 20px
+            &:last-child
+                margin-top: 20px
+
+        form
+            @include flex-column
+            width: 100%
+
+            label
+                @include flex-column
+                font-size: 16px
+                margin-bottom: 20px
+                @include phone
+                    font-size: 12px
+                    margin-bottom: 16px
+                input
+                    height: 50px
+                    font-size: 20px
+                    background: $brand-white
+                    border-radius: 10px
+                    border: 1px solid $brand-accent-2
+                    margin-top: 6px
+                    padding: 0 10px
+                    @include transition
+                    @include phone
+                        height: 40px
+                        font-size: 16px
+                        border-radius: 8px
+                        padding: 0 6px
+                    &:hover
+                        background: $brand-accent-3
+                    &:focus
+                        background: $brand-white
+                        border: 1px solid $brand-purple
+            button
+                width: 100%
+                height: 50px
+                background: $brand-purple
+                color: white
+                margin-top: 20px
+                border-radius: 10px
+                font-size: 18px
+                @include transition
+                @include phone
+                    height: 40px
+                    font-size: 16px
+                    border-radius: 8px
+                    margin-top: 0px
+                &:hover
+                    background: darken($brand-purple, 4%)
+                &:active
+                    background: darken($brand-purple, 10%)
+    .info
+        @include flex-column
+        align-items: center
+        width: 20%
+        height: 600px
+        padding: 30px 10px
+        margin-left: 3%
+        @include phone
+            width: 85%
+        svg
+            width: 80%
+            margin-bottom: 40px
+            @include phone
+                width: 50%
+
+        h4
+            font-weight: 700
+            font-size: 26px
+            line-height: 26px
+            color: #0f1031
+            text-align: left
+            width: 100%
+            margin-bottom: 10px
+
+        span
+            font-size: 19px
+            line-height: 28px

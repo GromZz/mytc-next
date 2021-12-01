@@ -1,0 +1,80 @@
+@use "./index.scss" as *;
+
+.header {
+	@include flex-column;
+	width: 100%;
+	height: 100px;
+	align-items: center;
+	@include phone {
+		height: 80px;
+	}
+
+	div {
+		@include flex-row;
+		&:first-child {
+			@include flex-row;
+			width: 70%;
+			height: 100%;
+			justify-content: space-between;
+			align-items: center;
+			@include phone {
+				width: fit-content;
+				width: 85%;
+			}
+
+			div {
+				@include unselectable;
+				&:first-child {
+					@include flex-row;
+					align-items: center;
+					width: 150px;
+					height: 100%;
+					cursor: pointer;
+					@include phone {
+						width: fit-content;
+					}
+
+					svg {
+						width: 60px;
+						height: 60px;
+						@include phone {
+							width: 30px;
+							height: 30px;
+						}
+					}
+
+					label {
+						font-weight: 500;
+						font-size: 20px;
+						line-height: 30px;
+						color: black;
+						margin-left: 6px;
+						cursor: pointer;
+						@include phone {
+							font-size: 14px;
+						}
+					}
+				}
+				&:last-child {
+					@include flex-row;
+					align-items: center;
+					height: 100%;
+					a {
+						font-weight: 500;
+						font-size: 18px;
+						line-height: 27px;
+						@include transition;
+						border-radius: 50px;
+						padding: 6px 14px;
+						&:hover {
+							background: $brand-accent-3;
+						}
+						@include phone {
+							font-size: 14px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
